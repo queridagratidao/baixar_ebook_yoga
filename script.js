@@ -11,7 +11,7 @@
       na mesma pasta deste site).
    ------------------------------------------------------------ */
 const CONFIG = {
-  GOOGLE_SHEET_URL: "",          // ex.: "https://script.google.com/macros/s/AKfy.../exec"
+  GOOGLE_SHEET_URL: "https://script.google.com/macros/s/AKfycbzC9PXFDcE2aTor7MrfFQ8Z_uue5z1dhUcdQ1nB615D90fQCjtF0F7gf-n3kw9fsrli/exec",
   EBOOK_FILE: "ebook.pdf",       // nome do arquivo do ebook
 };
 
