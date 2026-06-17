@@ -128,6 +128,14 @@ em { font-style: italic; color: var(--terracotta); }
 }
 .hero__title { font-size: clamp(2.4rem, 6vw, 4rem); margin-bottom: 1.4rem; }
 .hero__lead { font-size: 1.18rem; color: var(--ink-soft); max-width: 600px; margin: 0 auto 2.2rem; }
+.hero__mantra {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--sage);
+  letter-spacing: 0.04em;
+  margin: 0 0 2rem;
+}
 .hero__note { margin-top: 1rem; font-size: 0.9rem; color: var(--sage); }
 
 .hero__wave {
@@ -284,7 +292,8 @@ em { font-style: italic; color: var(--terracotta); }
 }
 .footer__mark { width: 50px; height: 50px; margin: 0 auto 1rem; }
 .footer__brand { font-family: var(--serif); font-size: 1.5rem; color: var(--sage-deep); font-weight: 600; }
-.footer__tag { color: var(--terracotta); font-style: italic; font-family: var(--serif); font-size: 1.15rem; margin-bottom: 1.4rem; }
+.footer__tag { color: var(--terracotta); font-style: italic; font-family: var(--serif); font-size: 1.15rem; margin-bottom: 0.3rem; }
+.footer__author { font-size: 0.82rem; color: var(--sage); letter-spacing: 0.04em; margin-bottom: 1.4rem; }
 .footer__legal { font-size: 0.82rem; color: var(--ink-soft); }
 
 /* ============================================================
