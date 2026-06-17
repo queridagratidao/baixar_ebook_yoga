@@ -111,8 +111,30 @@
             <input type="email" id="email" name="email" placeholder="voce@email.com" required />
           </div>
           <div class="field">
-            <label for="whatsapp">WhatsApp <span class="opt">(opcional)</span></label>
-            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" />
+            <label for="whatsapp">WhatsApp <span class="opt">(com DDD)</span></label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 90000-0000" required />
+          </div>
+          <div class="field">
+            <label for="nivel">Seu nível de yoga</label>
+            <select id="nivel" name="nivel" required>
+              <option value="" disabled selected>Selecione uma opção…</option>
+              <option value="Nunca pratiquei">Nunca pratiquei — quero começar</option>
+              <option value="Iniciante">Iniciante</option>
+              <option value="Intermediário">Intermediário</option>
+              <option value="Avançado">Avançado</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="motivo">O que te traz ao yoga?</label>
+            <select id="motivo" name="motivo" required>
+              <option value="" disabled selected>Escolha o que mais combina com você…</option>
+              <option value="Ansiedade e estresse">Aliviar a ansiedade e o estresse</option>
+              <option value="Dormir melhor">Dormir e descansar melhor</option>
+              <option value="Dores e tensão no corpo">Aliviar dores e tensão no corpo</option>
+              <option value="Flexibilidade e força">Ganhar flexibilidade e força</option>
+              <option value="Autoconhecimento e espiritualidade">Autoconhecimento e espiritualidade</option>
+              <option value="Autocuidado / momento só meu">Criar um momento de autocuidado só meu</option>
+            </select>
           </div>
 
           <label class="consent">

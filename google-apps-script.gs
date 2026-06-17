@@ -12,7 +12,7 @@ function doPost(e) {
 
     // Cria o cabeçalho na primeira vez
     if (sheet.getLastRow() === 0) {
-      sheet.appendRow(["Data", "Nome", "E-mail", "WhatsApp", "Origem"]);
+      sheet.appendRow(["Data", "Nome", "E-mail", "WhatsApp", "Nível de yoga", "O que traz ao yoga", "Origem"]);
     }
 
     sheet.appendRow([
@@ -20,6 +20,8 @@ function doPost(e) {
       dados.nome || "",
       dados.email || "",
       dados.whatsapp || "",
+      dados.nivel || "",
+      dados.motivo || "",
       dados.origem || "",
     ]);
 

@@ -49,12 +49,18 @@ form.addEventListener("submit", async (event) => {
   const nome = document.getElementById("nome").value.trim();
   const email = document.getElementById("email").value.trim();
   const whatsapp = document.getElementById("whatsapp").value.trim();
+  const nivel = document.getElementById("nivel").value;
+  const motivo = document.getElementById("motivo").value;
   const consent = document.getElementById("consent").checked;
 
   // Validações simples
   if (!nome) return showError("Por favor, preencha o seu nome. 🌱");
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
     return showError("Confira o seu e-mail — parece que falta algo. ✶");
+  if (whatsapp.replace(/\D/g, "").length < 10)
+    return showError("Inclua o seu WhatsApp com DDD, por favor. 📱");
+  if (!nivel) return showError("Conta pra mim o seu nível de yoga. 🧘🏽‍♀️");
+  if (!motivo) return showError("Escolha o que te traz ao yoga. 💛");
   if (!consent) return showError("Marque a caixinha para receber o ebook. 🙏");
 
   submitBtn.disabled = true;
@@ -64,6 +70,8 @@ form.addEventListener("submit", async (event) => {
     nome,
     email,
     whatsapp,
+    nivel,
+    motivo,
     origem: "Landing Page Ebook Yoga",
     data: new Date().toLocaleString("pt-BR"),
   };
