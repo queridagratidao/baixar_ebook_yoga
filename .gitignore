@@ -1,2 +1,3 @@
-ebook.pdf
+# NÃO ignore o ebook.pdf — ele precisa ir pro GitHub Pages para o download funcionar.
 .DS_Store
+Thumbs.db
