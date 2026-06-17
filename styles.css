@@ -172,40 +172,6 @@ em { font-style: italic; color: var(--terracotta); }
 .card h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
 .card p { color: var(--ink-soft); font-size: 0.98rem; }
 
-/* ---------- Para quem é ---------- */
-.section--for {
-  display: grid;
-  grid-template-columns: 0.8fr 1.1fr;
-  gap: 3.5rem;
-  align-items: center;
-}
-.for__circle {
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 50% 40%, #fff 0%, var(--sand) 70%);
-  display: grid;
-  place-items: center;
-  box-shadow: var(--shadow);
-  border: 1px solid rgba(201, 162, 75, 0.4);
-}
-.for__circle img { width: 52%; }
-.checklist { list-style: none; margin: 0 0 2rem; }
-.checklist li {
-  position: relative;
-  padding-left: 2rem;
-  margin-bottom: 0.9rem;
-  color: var(--ink-soft);
-  font-size: 1.05rem;
-}
-.checklist li::before {
-  content: "✦";
-  position: absolute;
-  left: 0;
-  color: var(--gold);
-  font-size: 1.1rem;
-}
-
 /* ============================================================
    CAPTURA
    ============================================================ */
@@ -283,6 +249,41 @@ em { font-style: italic; color: var(--terracotta); }
 .success p { color: var(--ink-soft); margin-bottom: 1.6rem; }
 
 /* ============================================================
+   EGRÉGORA / PRÓXIMO PASSO
+   ============================================================ */
+.section--egregora { padding-top: 2rem; }
+.egregora {
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--sage-deep);
+  border-radius: 26px;
+  padding: 3.5rem 2.2rem;
+  box-shadow: var(--shadow);
+}
+.egregora__lotus { font-size: 2.4rem; display: block; margin-bottom: 0.6rem; }
+.egregora .eyebrow { color: var(--gold); }
+.egregora h2 { color: var(--white); font-size: clamp(1.7rem, 3.6vw, 2.4rem); margin-bottom: 1.2rem; }
+.egregora__lead { color: rgba(255, 253, 249, 0.82); max-width: 560px; margin: 0 auto 2.6rem; font-size: 1.05rem; }
+
+.egregora__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.4rem;
+}
+.modal-card {
+  background: var(--cream);
+  border-radius: var(--radius);
+  padding: 2rem 1.6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.modal-card h3 { font-size: 1.8rem; margin-bottom: 0.6rem; }
+.modal-card p { color: var(--ink-soft); font-size: 0.98rem; margin-bottom: 1.6rem; flex-grow: 1; }
+.modal-card .btn { align-self: center; }
+
+/* ============================================================
    RODAPÉ
    ============================================================ */
 .footer {
@@ -300,9 +301,7 @@ em { font-style: italic; color: var(--terracotta); }
    RESPONSIVO
    ============================================================ */
 @media (max-width: 760px) {
-  .section--for { grid-template-columns: 1fr; text-align: center; }
-  .for__media { max-width: 260px; margin: 0 auto; }
-  .checklist li { text-align: left; }
   .nav__cta { display: none; }
   .capture { padding: 2.2rem 1.4rem; }
+  .egregora { padding: 2.6rem 1.4rem; }
 }
